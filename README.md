@@ -160,7 +160,7 @@ recognize that something different is afoot with the person we're speaking to.
 Let's try some _empathy_ with Ruby to understand why the _return values_ were
 so surprising.
 
-## Identify how division in Ruby differs from normal division
+## Identify How Division in Ruby Differs from Normal Division
 
 Now we just saw something a little bit strange, and it's related to "data
 type," which we just learned about.
