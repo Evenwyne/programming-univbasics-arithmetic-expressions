@@ -40,7 +40,7 @@ get a return value. Consider:
 ```ruby
 x = 5
 y = 1
-x + y #=> ???
+x + y #=> ??
 ```
 
 Our mission is to calculate the value of adding `x` and `y`.
@@ -58,7 +58,7 @@ Let's consider what happens in the last expression, step-by-step
 
 
 ```ruby
-x + y #=> ???
+x + y #=> ??
 ```
 
 |Expression|Action|
