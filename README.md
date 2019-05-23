@@ -76,7 +76,7 @@ conversation with Ruby.
 ## Recognize `+` as the Symbol for Addition
 
 Addition's symbol should look familiar. The symbol that is used to perform this
-operation is (`+`).
+operation is `+`.
 
 ## Demonstrate the Addition Operator
 
@@ -94,7 +94,7 @@ below:
 
 ## Recognize `-` as the Symbol for Subtraction
 
-Like addition, the symbol for subtraction (`-`) is also the same as in common
+Like addition, the symbol for subtraction, `-`, is also the same as in common
 arithmetic.
 
 ## Demonstrate the Subtraction Operator
@@ -113,7 +113,7 @@ And don't forget that losing negative things is a positive!
 
 ## Recognize `*` as the Symbol For Multiplication
 
-The symbol for the multiplication is (`*`) so that we don't confuse it with the
+The symbol for the multiplication is an asterisk, `*`, so that we don't confuse it with the
 letter `x`.
 
 ## Demonstrate the Multiplication Operator
@@ -134,7 +134,7 @@ Nothing out of the ordinary, right?
 
 ## Recognize `/` as the Symbol For Division
 
-The symbol for the division (`/`) is a forward slash. There's no handy `÷`
+The symbol for the division is a forward slash: `/`. There's no handy `÷`
 character on most keyboards, so programmers adopted `/`.
 
 ***Division behaves differently in Ruby than you might expect***
