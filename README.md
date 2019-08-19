@@ -91,7 +91,7 @@ Let's experiment again. Open IRB and type these commands below:
 4 - 13 #=> -9
 ```
 
-And don't forget that losing negative things is a positive!
+And don't forget that losing negative things is positive!
 
 ```ruby
 11 - -11 #=> 22
@@ -99,7 +99,7 @@ And don't forget that losing negative things is a positive!
 
 ## Recognize `*` as the Symbol For Multiplication
 
-The symbol for the multiplication is an asterisk, `*`, so that we don't confuse it with the
+The symbol for the multiplication is an asterisk, `*` so that we don't confuse it with the
 letter `x`.
 
 ## Demonstrate the Multiplication Operator
@@ -138,14 +138,14 @@ Open up IRB and try typing the following the division commands:
 4 / 13  #=> 0
 ```
 
-That's surprising! Clearly division is a little bit different in Ruby-land.
+That's surprising! Division is a little bit different in Ruby-land.
 
 ## Identify How Division in Ruby Differs from Normal Division
 
 Now we just saw something a little bit strange, and it's related to "data
 type," which we just learned about in the previous lesson.
 
-In Ruby, and most programming languages, numbers can be `Integer`s (whole
+In Ruby and most programming languages, numbers can be `Integer`s (whole
 numbers), or `Float`s (decimal numbers). When you divide `Integers` by one
 another, Ruby doesn't want to upset you by returning a non-`Integer`, it thinks
 you're a "big picture" kinda thinker &mdash; "just stuff to the left of the
@@ -161,7 +161,7 @@ respond correctly.
 9.0 / 2 #=> 4.5
 ```
 
-Obviously two `Float`s in a division tells Ruby you're very concerned about
+Obviously, two `Float`s in a division tells Ruby you're very concerned about
 details and will return a `Float`:
 
 ```ruby
@@ -174,6 +174,5 @@ expect.
 
 ## Conclusion
 
-Wow that was amazing! We took three lessons to learn three expressions
-foundational expressions, but in this lesson we were able to build on them and
-add 4 more expression. We can now even use IRB as a simple calculator. Not bad!
+We now have the ability to perform most complex arithmetic calculations. We're
+on our way to launching rockets to the Moon!
