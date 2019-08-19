@@ -35,7 +35,7 @@ that the expression would _evaluate_ to `6`.
 But how does Ruby work with an expression like `x + 1`? It uses the "_variable
 lookup expression_!"
 
-Lookup Fig 1B
+![Box shake out](https://curriculum-content.s3.amazonaws.com/programming-univbasics/the-assignment-expression/Image_87D_VariableNamingMetaphors.png)
 
 When Ruby sees a variable in an expression it swaps **in** the variable's value
 _as if_ a _constant expression_ were there.
