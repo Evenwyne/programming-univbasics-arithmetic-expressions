@@ -23,25 +23,22 @@ and their corresponding _operations_ that were familiar from basic arithmetic:
 | `+` | Addition ||
 | `-` | Subtraction ||
 | `*` | Multiplication | We use `*` instead of `×` because it looks like `x`-the-letter|
-| `/` | Division | We use `/` instead of `÷` because that's not on a keyboard|
-| `**` | Exponentiation | We use `**` instead of `^` because that means something else in programming languages|
+| `/` | Division | We use `/` instead of `÷` because that symbol's not on keyboards|
+| `**` | Exponentiation | We use `**` instead of `^` because `^` means something else in programming languages|
 | `()` | Association | Expressions inside of `()` get evaluated earlier|
 
 Back then, we didn't know how to use _variable lookup_ _expressions_ yet. We
 had an intuitive grasp of how _operators_ worked with _constant expressions_
-like `5 + 1`. But how does Ruby work with an expression like `x + 1`?
+like `5 + 1`. Knowing what `5` and `1` and `+` mean meant that we could guess
+that the expression would _evaluate_ to `6`.
 
-Amazingly, when Ruby sees a variable in an expression it swaps **in** the
-variables value _as if_ a constant expression were there. To use the metaphors
-we introduced already, it looks up that variable name's "definition..."
+But how does Ruby work with an expression like `x + 1`? It uses the "_variable
+lookup expression_!"
 
 Lookup Fig 1B
 
-...or it shakes the "content of the box labeled with the variable name"
-
-Lookup Fig 2B
-
-...and gets the value _back out_. Let's explore that!
+When Ruby sees a variable in an expression it swaps **in** the variable's value
+_as if_ a _constant expression_ were there.
 
 ## Trace Resolution of Variables to Scalar Values to Return Value
 
@@ -55,7 +52,11 @@ swapping in a complex expression that must be evaluated to produce a value.
 
 ```ruby
 x = 3 * (10 - 4)
-x + 2 # => 20; Ruby "sees" (3 * (10 - 4)) + 2; evaluates it and returns 20
+x + 2 # Ruby "sees" (3 * (10 - 4)) + 2
+(3 * (10 - 4)) + 2
+(3 * 6) + 2
+(18) + 2
+18 + 2 #=> 20; Ruby does the necessary substitutions until it evaluates data and operators
 ```
 
 ## Recognize `+` as the Symbol for Addition
@@ -152,23 +153,24 @@ decimal, please."
 
 So, `9 / 2` is `4` and the remainder (`½`) is helpfully left off.
 
-By the same reasoning as above, if _one_ of the numbers in the expression were
-a `Float`, Ruby would get the hint that we want a precise answer, and it would
+By the same reasoning, if _one_ of the numbers in the expression were a
+`Float`, Ruby would get the hint that we want a precise answer, and it would
 respond correctly.
 
 ```ruby
 9.0 / 2 #=> 4.5
 ```
 
-Obviously two `Float`s in a division will return a `Float`:
+Obviously two `Float`s in a division tells Ruby you're very concerned about
+details and will return a `Float`:
 
 ```ruby
 9.0 / 2.0 #=> 4.5
 ```
 
 Take those "surprising" results from the previous section, make one, the other,
-or both `Float`s and verify that you're back to conversing with Ruby as you'd
-expect, using IRB.
+or both `Float`s and verify that you're back to getting the precision you
+expect.
 
 ## Conclusion
 
