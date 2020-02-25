@@ -172,6 +172,26 @@ Take those "surprising" results from the previous section, make one, the other,
 or both `Float`s and verify that you're back to getting the precision you
 expect.
 
+## Bonus Operator - the Modulo
+
+In addition to the addition, subtraction, multiplication, and division operators,
+Ruby also has a fifth operator for math, the Modulo: `%`. When used, Ruby will
+return the _remainder_ from dividing the first number from the second:
+
+```ruby
+4 % 2 #=> 0
+```
+
+Four is evenly divided by two, leaving no remainder.
+
+```ruby
+5 % 2 #=> 1
+```
+
+Five, however, is not evenly divided by two, leaving a remainder of one. This can
+be a handy way to tell if a number is even or odd - if a number is evenly divisible
+by two, it is even.
+
 ## Conclusion
 
 We now have the ability to perform most complex arithmetic calculations. We're
